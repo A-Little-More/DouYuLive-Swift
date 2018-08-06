@@ -16,8 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        self.window = UIWindow.init(frame: UIScreen.main.bounds)
+        
+        self.window?.backgroundColor = UIColor.white
+        
+        self.window?.rootViewController = DYTabBarController()
+        
+        /**
+         *  UITabBar的tinkColor
+         */
         UITabBar.appearance().tintColor = UIColor.orange
         
+        self.window?.makeKeyAndVisible()
         
         return true
     }

@@ -13,44 +13,39 @@ class DYTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /**
-         *  兼容iOS 8.0(没有storyboard reference)
-         */
-        self.addChildVc(storyboardName: "Home")
-        self.addChildVc(storyboardName: "Live")
-        self.addChildVc(storyboardName: "Follow")
-        self.addChildVc(storyboardName: "Profile")
+        let tabBarTitles: [String] = ["首页","直播","关注","我的"]
+        
+        let tabbarNormalImages: [String] = ["btn_home_normal","btn_column_normal","btn_live_normal","btn_user_normal"]
+        
+        let tabbarSelectedImages: [String] = ["btn_home_selected","btn_column_selected","btn_live_selected","btn_user_selected"]
+        
+        let controllersName: [String] = ["HomeViewController","LiveViewController","FollowViewController","ProfileViewController"]
+        
+        var viewControllers: [UIViewController] = []
+        
+        for i in 0..<tabBarTitles.count {
+            
+            /**
+             * NSClassFromString 的参数需要用 项目的名称 + . + 类名称
+             */
+            let viewControllerClass = NSClassFromString("DouYuLive_Swift." + controllersName[i]) as! UIViewController.Type
+            
+            let VC = viewControllerClass.init()
+            
+            let navigationController = DYNavigationController(rootViewController: VC)
+            
+            navigationController.tabBarItem.title = tabBarTitles[i]
+            
+            navigationController.tabBarItem.image = UIImage(named: tabbarNormalImages[i])?.withRenderingMode(.alwaysOriginal)
+            
+            navigationController.tabBarItem.selectedImage = UIImage(named: tabbarSelectedImages[i])?.withRenderingMode(.alwaysOriginal)
+            
+            viewControllers.append(navigationController)
+            
+        }
+        
+        self.viewControllers = viewControllers
         
     }
-
-    private func addChildVc(storyboardName: String) {
-        
-        /**
-         *  通过storyboard获得控制器
-         */
-        let childVc = UIStoryboard(name: storyboardName, bundle: nil).instantiateInitialViewController()!
-        
-        /**
-         *  添加子控制器
-         */
-        self.addChildViewController(childVc)
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
