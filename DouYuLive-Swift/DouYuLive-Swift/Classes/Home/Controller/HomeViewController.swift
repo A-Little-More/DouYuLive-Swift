@@ -37,7 +37,12 @@ class HomeViewController: UIViewController {
       
         var childVcs = [UIViewController]()
         
-        for _ in 0..<4 {
+        //添加推荐控制器
+        let recommendVc = RecommendViewController()
+        
+        childVcs.append(recommendVc)
+        
+        for _ in 0..<3 {
             
             let vc = UIViewController()
             
@@ -47,7 +52,7 @@ class HomeViewController: UIViewController {
             
         }
         
-        let contentViewFrame = CGRect(x: 0, y: kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight, width: kScreenWidth, height: kScreenHeight - (kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight))
+        let contentViewFrame = CGRect(x: 0, y: kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight, width: kScreenWidth, height: kScreenHeight - (kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight + kTabBarHeight))
         
         let contentView = PageContentView(frame: contentViewFrame, childVcs: childVcs, parentVc: self)
         

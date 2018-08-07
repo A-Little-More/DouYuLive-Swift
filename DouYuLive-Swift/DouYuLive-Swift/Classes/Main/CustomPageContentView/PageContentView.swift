@@ -139,7 +139,6 @@ extension PageContentView: UICollectionViewDelegate {
         //传递代理
         self.delegate?.pageContentViewContentView(contentView: self, progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
         
-        print("progress: \(progress), sourceIndex: \(sourceIndex), targetIndex: \(targetIndex)")
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {

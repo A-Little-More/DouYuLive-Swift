@@ -184,23 +184,31 @@ extension PageTitleView {
     
     func setTitleViewWithProgress(progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         
+        if(progress == 0 && sourceIndex == targetIndex){
+            
+            return
+            
+        }
+        
+        //原label
         let sourceLabel = titleLabels[sourceIndex]
-        
+        //目标label
         let targetLabel = titleLabels[targetIndex]
-        
+        //总的移动距离
         let moveTotalX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
-        
+        //移动的比例
         let moveX = moveTotalX * progress
-        
+        //设置移动距离
         self.scrollLine.frame.origin.x = sourceLabel.frame.origin.x + moveX
         
         //颜色的变化范围
         let colorDelta = (kSelectColor.0 - kNormalColor.0, kSelectColor.1 - kNormalColor.1, kSelectColor.2 - kNormalColor.2)
         
+        //实现颜色的渐变
         sourceLabel.textColor = UIColor(r: kSelectColor.0 - colorDelta.0 * progress, g: kSelectColor.1 - colorDelta.1 * progress, b: kSelectColor.2 - colorDelta.2 * progress, a: 1.0)
         
         targetLabel.textColor = UIColor(r: kNormalColor.0 + colorDelta.0 * progress, g: kNormalColor.1 + colorDelta.1 * progress, b: kNormalColor.2 + colorDelta.2 * progress, a: 1.0)
-        
+        //设置index
         self.currentLabelIndex = targetIndex
         
     }
