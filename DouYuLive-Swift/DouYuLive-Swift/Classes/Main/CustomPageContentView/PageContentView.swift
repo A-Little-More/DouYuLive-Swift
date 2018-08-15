@@ -45,7 +45,6 @@ class PageContentView: UIView {
         layout.scrollDirection = .horizontal
         
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.blue
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = true
         collectionView.bounces = false

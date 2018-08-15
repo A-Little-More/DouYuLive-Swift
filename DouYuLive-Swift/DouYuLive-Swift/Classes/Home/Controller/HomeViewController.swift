@@ -36,29 +36,20 @@ class HomeViewController: UIViewController {
     private lazy var pageContentView: PageContentView = { [weak self] in
       
         var childVcs = [UIViewController]()
-        
         //添加推荐控制器
-        let recommendVc = RecommendViewController()
-        
-        childVcs.append(recommendVc)
-        
-        for _ in 0..<3 {
-            
-            let vc = UIViewController()
-            
-            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)), a: 1.0)
-
-            childVcs.append(vc)
-            
-        }
+        childVcs.append(RecommendViewController())
+        //添加游戏控制器
+        childVcs.append(GameViewController())
+        //添加娱乐控制器
+        childVcs.append(PleasureViewController())
+        //添加趣玩控制器
+        childVcs.append(FunnyViewController())
         
         let contentViewFrame = CGRect(x: 0, y: kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight, width: kScreenWidth, height: kScreenHeight - (kStatusBarHeight + kNavigationBarHeight + kTitleViewHeight + kTabBarHeight))
         
         let contentView = PageContentView(frame: contentViewFrame, childVcs: childVcs, parentVc: self)
         
         contentView.delegate = self
-        
-        contentView.backgroundColor = UIColor.red
         
         return contentView
         

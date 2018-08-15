@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2DCFF0834E07D562EC6CA2C2 /* Pods_DouYuLive_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F844B3D59E9ACF3839283F /* Pods_DouYuLive_Swift.framework */; };
+		FA1DFF1D2121268A0081F7BD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF1C2121268A0081F7BD /* BaseViewModel.swift */; };
+		FA1DFF2021212D280081F7BD /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF1F21212D280081F7BD /* BaseAnchorViewController.swift */; };
+		FA1DFF2221215AA90081F7BD /* PleasureMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF2121215AA90081F7BD /* PleasureMenuView.swift */; };
+		FA1DFF2421215B1E0081F7BD /* PleasureMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1DFF2321215B1E0081F7BD /* PleasureMenuView.xib */; };
+		FA1DFF2721216AFE0081F7BD /* PleasureMenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF2521216AFE0081F7BD /* PleasureMenuCollectionCell.swift */; };
+		FA1DFF2821216AFE0081F7BD /* PleasureMenuCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1DFF2621216AFE0081F7BD /* PleasureMenuCollectionCell.xib */; };
+		FA1DFF2A21217C5A0081F7BD /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF2921217C5A0081F7BD /* FunnyViewController.swift */; };
+		FA1DFF2C212180F80081F7BD /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF2B212180F80081F7BD /* FunnyViewModel.swift */; };
 		FA251E0B2117DA0300246A4A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E0A2117DA0300246A4A /* PageTitleView.swift */; };
 		FA251E0D2117DD1500246A4A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E0C2117DD1500246A4A /* Common.swift */; };
 		FA251E102117EFBB00246A4A /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E0F2117EFBB00246A4A /* PageContentView.swift */; };
@@ -21,6 +29,7 @@
 		FA251E2121192D7000246A4A /* PrettyLiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA251E1F21192D7000246A4A /* PrettyLiveCollectionViewCell.xib */; };
 		FA251E5F2119755000246A4A /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E5E2119755000246A4A /* NetworkTools.swift */; };
 		FA251E6221197A7200246A4A /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E6121197A7200246A4A /* RecommendViewModel.swift */; };
+		FA251E642119809800246A4A /* NSDate_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E632119809800246A4A /* NSDate_Extension.swift */; };
 		FA62F0432115B58400C992A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62F0422115B58400C992A9 /* AppDelegate.swift */; };
 		FA62F04A2115B58500C992A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA62F0492115B58500C992A9 /* Assets.xcassets */; };
 		FA62F0582115B58500C992A9 /* DouYuLive_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62F0572115B58500C992A9 /* DouYuLive_SwiftTests.swift */; };
@@ -32,6 +41,22 @@
 		FA62F09F2116FB7400C992A9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62F09E2116FB7400C992A9 /* ProfileViewController.swift */; };
 		FA62F0A12116FB8700C992A9 /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62F0A02116FB8700C992A9 /* FollowViewController.swift */; };
 		FA62F0DE2117175000C992A9 /* UIBarButtonItem_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA62F0DD2117175000C992A9 /* UIBarButtonItem_Extension.swift */; };
+		FA6CCEB12119D44F00804C0C /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEB02119D44F00804C0C /* AnchorGroup.swift */; };
+		FA6CCEB32119DBAE00804C0C /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEB22119DBAE00804C0C /* AnchorModel.swift */; };
+		FA6CCEB7211AD7A300804C0C /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEB6211AD7A300804C0C /* RecommendCycleView.swift */; };
+		FA6CCEB9211AD7BC00804C0C /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CCEB8211AD7BC00804C0C /* RecommendCycleView.xib */; };
+		FA6CCEBB211B0D8A00804C0C /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEBA211B0D8A00804C0C /* CycleModel.swift */; };
+		FA6CCEBE211B134800804C0C /* RecommendCycleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEBC211B134800804C0C /* RecommendCycleCollectionCell.swift */; };
+		FA6CCEBF211B134800804C0C /* RecommendCycleCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CCEBD211B134800804C0C /* RecommendCycleCollectionCell.xib */; };
+		FA6CCEC1211C0B2900804C0C /* RecommendGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEC0211C0B2900804C0C /* RecommendGameView.swift */; };
+		FA6CCEC3211C0B3900804C0C /* RecommendGameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CCEC2211C0B3900804C0C /* RecommendGameView.xib */; };
+		FA6CCEC6211C14FB00804C0C /* RecommendGameCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEC4211C14FB00804C0C /* RecommendGameCollectionCell.swift */; };
+		FA6CCEC7211C14FB00804C0C /* RecommendGameCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6CCEC5211C14FB00804C0C /* RecommendGameCollectionCell.xib */; };
+		FA6CCEC9211ED2BC00804C0C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCEC8211ED2BC00804C0C /* GameViewController.swift */; };
+		FA6CCECB211EDEF800804C0C /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCECA211EDEF800804C0C /* GameViewModel.swift */; };
+		FA6CCECD211EE25000804C0C /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCECC211EE25000804C0C /* GameModel.swift */; };
+		FA6CCECF211FEB5800804C0C /* PleasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCECE211FEB5800804C0C /* PleasureViewController.swift */; };
+		FA6CCED1211FECBA00804C0C /* PleasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CCED0211FECBA00804C0C /* PleasureViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +80,14 @@
 		5B0D2FD74FB1D0ADE7759F3A /* Pods-DouYuLive-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuLive-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuLive-Swift/Pods-DouYuLive-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		D4F844B3D59E9ACF3839283F /* Pods_DouYuLive_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuLive_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F950104B3832A38D2402E1E9 /* Pods-DouYuLive-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuLive-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuLive-Swift/Pods-DouYuLive-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		FA1DFF1C2121268A0081F7BD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		FA1DFF1F21212D280081F7BD /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
+		FA1DFF2121215AA90081F7BD /* PleasureMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleasureMenuView.swift; sourceTree = "<group>"; };
+		FA1DFF2321215B1E0081F7BD /* PleasureMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PleasureMenuView.xib; sourceTree = "<group>"; };
+		FA1DFF2521216AFE0081F7BD /* PleasureMenuCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleasureMenuCollectionCell.swift; sourceTree = "<group>"; };
+		FA1DFF2621216AFE0081F7BD /* PleasureMenuCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PleasureMenuCollectionCell.xib; sourceTree = "<group>"; };
+		FA1DFF2921217C5A0081F7BD /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		FA1DFF2B212180F80081F7BD /* FunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		FA251E0A2117DA0300246A4A /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		FA251E0C2117DD1500246A4A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		FA251E0F2117EFBB00246A4A /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +101,7 @@
 		FA251E1F21192D7000246A4A /* PrettyLiveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrettyLiveCollectionViewCell.xib; sourceTree = "<group>"; };
 		FA251E5E2119755000246A4A /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		FA251E6121197A7200246A4A /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		FA251E632119809800246A4A /* NSDate_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDate_Extension.swift; sourceTree = "<group>"; };
 		FA62F03F2115B58400C992A9 /* DouYuLive-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DouYuLive-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA62F0422115B58400C992A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA62F0492115B58500C992A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +119,22 @@
 		FA62F09E2116FB7400C992A9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FA62F0A02116FB8700C992A9 /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		FA62F0DD2117175000C992A9 /* UIBarButtonItem_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem_Extension.swift; sourceTree = "<group>"; };
+		FA6CCEB02119D44F00804C0C /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		FA6CCEB22119DBAE00804C0C /* AnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		FA6CCEB6211AD7A300804C0C /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		FA6CCEB8211AD7BC00804C0C /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		FA6CCEBA211B0D8A00804C0C /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
+		FA6CCEBC211B134800804C0C /* RecommendCycleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleCollectionCell.swift; sourceTree = "<group>"; };
+		FA6CCEBD211B134800804C0C /* RecommendCycleCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleCollectionCell.xib; sourceTree = "<group>"; };
+		FA6CCEC0211C0B2900804C0C /* RecommendGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameView.swift; sourceTree = "<group>"; };
+		FA6CCEC2211C0B3900804C0C /* RecommendGameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameView.xib; sourceTree = "<group>"; };
+		FA6CCEC4211C14FB00804C0C /* RecommendGameCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendGameCollectionCell.swift; sourceTree = "<group>"; };
+		FA6CCEC5211C14FB00804C0C /* RecommendGameCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendGameCollectionCell.xib; sourceTree = "<group>"; };
+		FA6CCEC8211ED2BC00804C0C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FA6CCECA211EDEF800804C0C /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		FA6CCECC211EE25000804C0C /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		FA6CCECE211FEB5800804C0C /* PleasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleasureViewController.swift; sourceTree = "<group>"; };
+		FA6CCED0211FECBA00804C0C /* PleasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PleasureViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +180,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA1DFF1B2121265A0081F7BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DFF1C2121268A0081F7BD /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA1DFF1E21212D120081F7BD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DFF1F21212D280081F7BD /* BaseAnchorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		FA251E092117D9EE00246A4A /* CustomPageTitleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				FA251E6121197A7200246A4A /* RecommendViewModel.swift */,
+				FA6CCECA211EDEF800804C0C /* GameViewModel.swift */,
+				FA6CCED0211FECBA00804C0C /* PleasureViewModel.swift */,
+				FA1DFF2B212180F80081F7BD /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -263,6 +332,8 @@
 		FA62F0742115C17700C992A9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FA1DFF1E21212D120081F7BD /* ViewController */,
+				FA1DFF1B2121265A0081F7BD /* ViewModel */,
 				FA251E1921187CDD00246A4A /* CustomLiveCell */,
 				FA251E0E2117EFA500246A4A /* CustomPageContentView */,
 				FA251E092117D9EE00246A4A /* CustomPageTitleView */,
@@ -335,6 +406,18 @@
 			children = (
 				FA251E15211874A800246A4A /* RecommendCollectionHeaderView.swift */,
 				FA251E16211874A800246A4A /* RecommendCollectionHeaderView.xib */,
+				FA6CCEB6211AD7A300804C0C /* RecommendCycleView.swift */,
+				FA6CCEB8211AD7BC00804C0C /* RecommendCycleView.xib */,
+				FA6CCEBC211B134800804C0C /* RecommendCycleCollectionCell.swift */,
+				FA6CCEBD211B134800804C0C /* RecommendCycleCollectionCell.xib */,
+				FA6CCEC0211C0B2900804C0C /* RecommendGameView.swift */,
+				FA6CCEC2211C0B3900804C0C /* RecommendGameView.xib */,
+				FA6CCEC4211C14FB00804C0C /* RecommendGameCollectionCell.swift */,
+				FA6CCEC5211C14FB00804C0C /* RecommendGameCollectionCell.xib */,
+				FA1DFF2121215AA90081F7BD /* PleasureMenuView.swift */,
+				FA1DFF2321215B1E0081F7BD /* PleasureMenuView.xib */,
+				FA1DFF2521216AFE0081F7BD /* PleasureMenuCollectionCell.swift */,
+				FA1DFF2621216AFE0081F7BD /* PleasureMenuCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +425,10 @@
 		FA62F0922116FB2F00C992A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA6CCEB02119D44F00804C0C /* AnchorGroup.swift */,
+				FA6CCEB22119DBAE00804C0C /* AnchorModel.swift */,
+				FA6CCEBA211B0D8A00804C0C /* CycleModel.swift */,
+				FA6CCECC211EE25000804C0C /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -351,6 +438,9 @@
 			children = (
 				FA62F09A2116FB5300C992A9 /* HomeViewController.swift */,
 				FA251E132118662600246A4A /* RecommendViewController.swift */,
+				FA6CCEC8211ED2BC00804C0C /* GameViewController.swift */,
+				FA6CCECE211FEB5800804C0C /* PleasureViewController.swift */,
+				FA1DFF2921217C5A0081F7BD /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,6 +494,7 @@
 			children = (
 				FA62F0DD2117175000C992A9 /* UIBarButtonItem_Extension.swift */,
 				FA251E112117F40A00246A4A /* UIColor_Extension.swift */,
+				FA251E632119809800246A4A /* NSDate_Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -517,9 +608,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6CCEC7211C14FB00804C0C /* RecommendGameCollectionCell.xib in Resources */,
+				FA6CCEB9211AD7BC00804C0C /* RecommendCycleView.xib in Resources */,
 				FA251E2121192D7000246A4A /* PrettyLiveCollectionViewCell.xib in Resources */,
+				FA1DFF2821216AFE0081F7BD /* PleasureMenuCollectionCell.xib in Resources */,
+				FA1DFF2421215B1E0081F7BD /* PleasureMenuView.xib in Resources */,
+				FA6CCEBF211B134800804C0C /* RecommendCycleCollectionCell.xib in Resources */,
 				FA251E18211874A800246A4A /* RecommendCollectionHeaderView.xib in Resources */,
 				FA62F04A2115B58500C992A9 /* Assets.xcassets in Resources */,
+				FA6CCEC3211C0B3900804C0C /* RecommendGameView.xib in Resources */,
 				FA251E1D21187D1000246A4A /* NormalLiveCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,10 +646,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DouYuLive-Swift/Pods-DouYuLive-Swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -584,23 +683,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1DFF2C212180F80081F7BD /* FunnyViewModel.swift in Sources */,
 				FA62F09F2116FB7400C992A9 /* ProfileViewController.swift in Sources */,
+				FA6CCEB32119DBAE00804C0C /* AnchorModel.swift in Sources */,
 				FA251E5F2119755000246A4A /* NetworkTools.swift in Sources */,
 				FA62F0792115D42300C992A9 /* DYTabBarController.swift in Sources */,
 				FA251E102117EFBB00246A4A /* PageContentView.swift in Sources */,
+				FA251E642119809800246A4A /* NSDate_Extension.swift in Sources */,
+				FA1DFF2221215AA90081F7BD /* PleasureMenuView.swift in Sources */,
 				FA251E1C21187D1000246A4A /* NormalLiveCollectionViewCell.swift in Sources */,
 				FA62F0432115B58400C992A9 /* AppDelegate.swift in Sources */,
 				FA251E17211874A800246A4A /* RecommendCollectionHeaderView.swift in Sources */,
 				FA251E6221197A7200246A4A /* RecommendViewModel.swift in Sources */,
 				FA251E142118662600246A4A /* RecommendViewController.swift in Sources */,
+				FA6CCEC1211C0B2900804C0C /* RecommendGameView.swift in Sources */,
 				FA62F08D2116F91300C992A9 /* DYNavigationController.swift in Sources */,
+				FA6CCEC9211ED2BC00804C0C /* GameViewController.swift in Sources */,
+				FA6CCECD211EE25000804C0C /* GameModel.swift in Sources */,
 				FA62F0DE2117175000C992A9 /* UIBarButtonItem_Extension.swift in Sources */,
+				FA6CCEB12119D44F00804C0C /* AnchorGroup.swift in Sources */,
 				FA62F09B2116FB5300C992A9 /* HomeViewController.swift in Sources */,
+				FA6CCEBE211B134800804C0C /* RecommendCycleCollectionCell.swift in Sources */,
 				FA251E0B2117DA0300246A4A /* PageTitleView.swift in Sources */,
 				FA62F09D2116FB6100C992A9 /* LiveViewController.swift in Sources */,
+				FA1DFF2021212D280081F7BD /* BaseAnchorViewController.swift in Sources */,
+				FA1DFF2A21217C5A0081F7BD /* FunnyViewController.swift in Sources */,
+				FA1DFF1D2121268A0081F7BD /* BaseViewModel.swift in Sources */,
+				FA6CCECF211FEB5800804C0C /* PleasureViewController.swift in Sources */,
+				FA6CCED1211FECBA00804C0C /* PleasureViewModel.swift in Sources */,
+				FA6CCECB211EDEF800804C0C /* GameViewModel.swift in Sources */,
 				FA251E2021192D7000246A4A /* PrettyLiveCollectionViewCell.swift in Sources */,
 				FA251E0D2117DD1500246A4A /* Common.swift in Sources */,
 				FA62F0A12116FB8700C992A9 /* FollowViewController.swift in Sources */,
+				FA1DFF2721216AFE0081F7BD /* PleasureMenuCollectionCell.swift in Sources */,
+				FA6CCEC6211C14FB00804C0C /* RecommendGameCollectionCell.swift in Sources */,
+				FA6CCEB7211AD7A300804C0C /* RecommendCycleView.swift in Sources */,
+				FA6CCEBB211B0D8A00804C0C /* CycleModel.swift in Sources */,
 				FA251E122117F40A00246A4A /* UIColor_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -750,6 +868,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M4VBTDKN2;
 				INFOPLIST_FILE = "DouYuLive-Swift/Info.plist";
@@ -757,6 +876,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lidong.DouYuLive-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -768,6 +888,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M4VBTDKN2;
 				INFOPLIST_FILE = "DouYuLive-Swift/Info.plist";
@@ -775,6 +896,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lidong.DouYuLive-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
