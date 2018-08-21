@@ -107,7 +107,7 @@ extension RecommendViewModel {
          *  请求后面部分游戏数据
          *  http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1533627442.609432
          */
-        loadAnchorData(URLStr: HOTCATEURL, method: .GET, parameters: parameters) {
+        loadAnchorData(isGroup: true, URLStr: HOTCATEURL, method: .GET, parameters: parameters) {
             
             dispatchGroup.leave()
             

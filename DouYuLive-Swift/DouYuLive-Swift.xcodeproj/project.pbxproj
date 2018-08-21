@@ -16,6 +16,9 @@
 		FA1DFF2821216AFE0081F7BD /* PleasureMenuCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1DFF2621216AFE0081F7BD /* PleasureMenuCollectionCell.xib */; };
 		FA1DFF2A21217C5A0081F7BD /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF2921217C5A0081F7BD /* FunnyViewController.swift */; };
 		FA1DFF2C212180F80081F7BD /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF2B212180F80081F7BD /* FunnyViewModel.swift */; };
+		FA1DFF94212527020081F7BD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF93212527020081F7BD /* BaseViewController.swift */; };
+		FA1DFF9B212553340081F7BD /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF9A212553340081F7BD /* RoomShowViewController.swift */; };
+		FA1DFF9D2125535A0081F7BD /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DFF9C2125535A0081F7BD /* RoomNormalViewController.swift */; };
 		FA251E0B2117DA0300246A4A /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E0A2117DA0300246A4A /* PageTitleView.swift */; };
 		FA251E0D2117DD1500246A4A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E0C2117DD1500246A4A /* Common.swift */; };
 		FA251E102117EFBB00246A4A /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA251E0F2117EFBB00246A4A /* PageContentView.swift */; };
@@ -88,6 +91,9 @@
 		FA1DFF2621216AFE0081F7BD /* PleasureMenuCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PleasureMenuCollectionCell.xib; sourceTree = "<group>"; };
 		FA1DFF2921217C5A0081F7BD /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		FA1DFF2B212180F80081F7BD /* FunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
+		FA1DFF93212527020081F7BD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FA1DFF9A212553340081F7BD /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
+		FA1DFF9C2125535A0081F7BD /* RoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
 		FA251E0A2117DA0300246A4A /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		FA251E0C2117DD1500246A4A /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		FA251E0F2117EFBB00246A4A /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -191,9 +197,51 @@
 		FA1DFF1E21212D120081F7BD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FA1DFF93212527020081F7BD /* BaseViewController.swift */,
 				FA1DFF1F21212D280081F7BD /* BaseAnchorViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FA1DFF95212551760081F7BD /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DFF96212551760081F7BD /* Controller */,
+				FA1DFF97212551760081F7BD /* Model */,
+				FA1DFF98212551760081F7BD /* View */,
+				FA1DFF99212551760081F7BD /* ViewModel */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		FA1DFF96212551760081F7BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA1DFF9A212553340081F7BD /* RoomShowViewController.swift */,
+				FA1DFF9C2125535A0081F7BD /* RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA1DFF97212551760081F7BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA1DFF98212551760081F7BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA1DFF99212551760081F7BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FA251E092117D9EE00246A4A /* CustomPageTitleView */ = {
@@ -290,6 +338,7 @@
 			children = (
 				FA62F0742115C17700C992A9 /* Main */,
 				FA62F0712115C17700C992A9 /* Follow */,
+				FA1DFF95212551760081F7BD /* Room */,
 				FA62F0722115C17700C992A9 /* Home */,
 				FA62F0732115C17700C992A9 /* Live */,
 				FA62F0752115C17700C992A9 /* Profile */,
@@ -688,6 +737,7 @@
 				FA6CCEB32119DBAE00804C0C /* AnchorModel.swift in Sources */,
 				FA251E5F2119755000246A4A /* NetworkTools.swift in Sources */,
 				FA62F0792115D42300C992A9 /* DYTabBarController.swift in Sources */,
+				FA1DFF9B212553340081F7BD /* RoomShowViewController.swift in Sources */,
 				FA251E102117EFBB00246A4A /* PageContentView.swift in Sources */,
 				FA251E642119809800246A4A /* NSDate_Extension.swift in Sources */,
 				FA1DFF2221215AA90081F7BD /* PleasureMenuView.swift in Sources */,
@@ -706,6 +756,7 @@
 				FA6CCEBE211B134800804C0C /* RecommendCycleCollectionCell.swift in Sources */,
 				FA251E0B2117DA0300246A4A /* PageTitleView.swift in Sources */,
 				FA62F09D2116FB6100C992A9 /* LiveViewController.swift in Sources */,
+				FA1DFF94212527020081F7BD /* BaseViewController.swift in Sources */,
 				FA1DFF2021212D280081F7BD /* BaseAnchorViewController.swift in Sources */,
 				FA1DFF2A21217C5A0081F7BD /* FunnyViewController.swift in Sources */,
 				FA1DFF1D2121268A0081F7BD /* BaseViewModel.swift in Sources */,
@@ -719,6 +770,7 @@
 				FA6CCEC6211C14FB00804C0C /* RecommendGameCollectionCell.swift in Sources */,
 				FA6CCEB7211AD7A300804C0C /* RecommendCycleView.swift in Sources */,
 				FA6CCEBB211B0D8A00804C0C /* CycleModel.swift in Sources */,
+				FA1DFF9D2125535A0081F7BD /* RoomNormalViewController.swift in Sources */,
 				FA251E122117F40A00246A4A /* UIColor_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

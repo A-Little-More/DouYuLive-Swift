@@ -19,7 +19,7 @@ extension PleasureViewModel {
     
     func loadAllPleasureData(finishedCallback: @escaping () -> ()) {
         
-        loadAnchorData(URLStr: LoadPleasureUrl, method: .GET, finishedCallback: finishedCallback)
+        loadAnchorData(isGroup: true, URLStr: LoadPleasureUrl, method: .GET, finishedCallback: finishedCallback)
         
     }
     

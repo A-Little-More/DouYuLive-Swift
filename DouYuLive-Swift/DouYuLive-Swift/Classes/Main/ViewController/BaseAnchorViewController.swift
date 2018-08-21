@@ -19,7 +19,7 @@ let kNormalCellID = "kNormalCellID"
 let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
 
     //MARK: 定义属性
     var baseViewModel: BaseViewModel!
@@ -74,9 +74,15 @@ class BaseAnchorViewController: UIViewController {
 
 extension BaseAnchorViewController {
     
-    @objc func setUI() {
+    override func setUI() {
+        
+        //给父类中的内容view的引用进行赋值
+        self.contentView = self.collectionView
         
         self.view.addSubview(self.collectionView)
+        
+        super.setUI()
+        
         
         //        self.collectionView.addSubview(self.cycleView)
         //
@@ -96,7 +102,7 @@ extension BaseAnchorViewController {
     
 }
 
-extension BaseAnchorViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension BaseAnchorViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @objc func numberOfSections(in collectionView: UICollectionView) -> Int {
         return self.baseViewModel.anchorGroups.count
@@ -134,3 +140,45 @@ extension BaseAnchorViewController: UICollectionViewDataSource, UICollectionView
     }
     
 }
+
+extension BaseAnchorViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let group = self.baseViewModel.anchorGroups[indexPath.section]
+        
+        let anchor = group.anchors[indexPath.row]
+        
+        //电脑直播
+        if anchor.isVertical == 0 {
+            
+            self.pushNormalRoom()
+            
+        }
+        //手机直播
+        else{
+            
+            self.presentShowRoom()
+            
+        }
+        
+    }
+    
+    private func presentShowRoom() {
+        
+        let showRoomVc = RoomShowViewController()
+        
+        self.present(showRoomVc, animated: true, completion: nil)
+        
+    }
+    
+    private func pushNormalRoom() {
+        
+        let normalRoomVc = RoomNormalViewController()
+        
+        self.navigationController?.pushViewController(normalRoomVc, animated: true)
+        
+    }
+    
+}
+

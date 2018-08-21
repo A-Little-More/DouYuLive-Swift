@@ -39,6 +39,9 @@ extension FunnyViewController {
             
             self.collectionView.reloadData()
             
+            //请求完数据，结束动画
+            self.loadDataFinished()
+            
         }
         
     }

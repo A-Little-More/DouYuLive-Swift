@@ -18,7 +18,7 @@ class BaseViewModel {
 extension BaseViewModel {
     
     //请求主播信息
-    func loadAnchorData(URLStr: String, method: MethodType, parameters: [String: Any]? = nil, finishedCallback: @escaping () -> ()) {
+    func loadAnchorData(isGroup: Bool, URLStr: String, method: MethodType, parameters: [String: Any]? = nil, finishedCallback: @escaping () -> ()) {
         
         NetworkTools.requestData(urlString: URLStr, menthod: method, parameters: parameters) { (result) in
             
@@ -26,13 +26,31 @@ extension BaseViewModel {
             
             guard let dataArray = resultDict["data"] as? [[String: Any]] else {return}
             
-            for dic in dataArray {
+            //是否是分组
+            if isGroup {
                 
-                let group = AnchorGroup(dict: dic)
+                for dic in dataArray {
+                    
+                    let group = AnchorGroup(dict: dic)
+                    
+                    self.anchorGroups.append(group)
+                    
+                }
+                
+            }else {
+                
+                let group = AnchorGroup()
+                
+                for dic in dataArray {
+                    
+                    group.anchors.append(AnchorModel(dict: dic))
+                    
+                }
                 
                 self.anchorGroups.append(group)
-                
             }
+            
+            
             
             finishedCallback()
             

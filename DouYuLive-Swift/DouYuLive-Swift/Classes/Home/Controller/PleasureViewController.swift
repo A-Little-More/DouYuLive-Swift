@@ -54,6 +54,9 @@ extension PleasureViewController {
             
             self.pleasureMenuView.groups = self.pleasureViewModel.anchorGroups
             
+            //请求完数据，结束动画
+            self.loadDataFinished()
+            
         }
     }
     

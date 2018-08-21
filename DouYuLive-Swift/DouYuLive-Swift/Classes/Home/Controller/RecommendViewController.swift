@@ -71,6 +71,10 @@ extension RecommendViewController {
             
             gameGroups?.append(moreGameGroup)
             self?.gameView.groups = gameGroups
+            
+            //请求完数据，结束动画
+            self?.loadDataFinished()
+            
         }
         
         //请求无限轮播

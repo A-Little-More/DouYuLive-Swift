@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let FunnyURL = "http://capi.douyucdn.cn/api/v1/getColumnRoom/2"
+
 class FunnyViewModel: BaseViewModel {
 
 }
@@ -16,7 +18,7 @@ extension FunnyViewModel {
     
     func loadFunnyData(finishedCallback: @escaping () -> ()) {
         
-        self.loadAnchorData(URLStr: <#T##String#>, method: <#T##MethodType#>, parameters: <#T##[String : Any]?#>, finishedCallback: finishedCallback)
+        self.loadAnchorData(isGroup: false, URLStr: FunnyURL, method: .GET, finishedCallback: finishedCallback)
         
     }
     
