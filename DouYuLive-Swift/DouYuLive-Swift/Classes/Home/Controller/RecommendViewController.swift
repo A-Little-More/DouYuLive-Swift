@@ -130,7 +130,8 @@ extension RecommendViewController {
 
     }
 
-
+    
+    
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if(indexPath.section == 1){
             return CGSize(width: kItemW, height: kPrettyItemH)

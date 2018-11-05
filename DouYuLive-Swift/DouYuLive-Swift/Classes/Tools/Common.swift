@@ -26,3 +26,53 @@ func w(_ object: UIView) -> CGFloat {
 func h(_ object: UIView) -> CGFloat {
     return object.frame.size.height
 }
+
+extension Notification.Name {
+    static let notificationName = Notification.Name(rawValue: "notificationName")
+}
+
+class EventReport {
+    
+    static let share = EventReport()
+    
+    func reportEvent(_ eventId: EventID, withParam: [String: Any]? = nil) {
+        
+    }
+    
+}
+
+struct EventID: RawRepresentable {
+    
+    typealias RawValue = String
+    
+    var rawValue: String
+    
+    init(rawValue: String) {
+        self.rawValue = rawValue
+    }
+    
+}
+
+extension EventID {
+    static let LoginPageExposure = EventID(rawValue: "LoginPageExposure")
+}
+
+extension NSObject {
+    private struct AssociatedKeys {
+         static var personName = "rt_personName"
+    }
+    
+    var personName: String? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.personName) as? String
+        }
+        
+        set {
+            if let newValue = newValue {
+              objc_setAssociatedObject(self, &AssociatedKeys.personName, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            }
+        }
+    }
+}
+
+
